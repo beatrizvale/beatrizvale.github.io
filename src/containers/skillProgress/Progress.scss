@@ -1,0 +1,92 @@
+@import "../../_globalColor";
+
+.meter {
+  height: 20px;
+  position: relative;
+  background: $progressBarBackground;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+}
+.meter > span {
+  display: block;
+  height: 100%;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: $progressBarSpanBG;
+  position: relative;
+  overflow: hidden;
+}
+.skill {
+  line-height: 3.5vw;
+}
+.skill > p {
+  margin-bottom: 0px;
+}
+.skill-bars {
+  font-size: 28px;
+  width: 40%;
+}
+.skills-container {
+  display: flex;
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 2rem;
+}
+.skills-container > * {
+  flex: 1;
+  margin-bottom: 30px;
+}
+.skills-image > img {
+  margin-left: 80px;
+  max-width: 90%;
+  height: auto;
+}
+.skills-image > div {
+  margin-top: 100px;
+}
+.skills-image > div > svg {
+  height: unset !important;
+  width: unset !important;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%) !important;
+}
+.warning-box {
+  background-color: rgba(255, 155, 192, 0.7);
+  border-radius: 5px;
+  margin-top: 50px;
+  padding: 16px 16px;
+}
+
+.warning-box > img {
+  vertical-align: middle;
+  margin-right: 10px;
+  height: 32px;
+  width: 32px;
+}
+
+/* Media Query */
+
+@media (max-width: 1456px) {
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+  }
+  .skills-bar {
+    line-height: 3rem;
+    margin: 20px;
+  }
+  .skills-image {
+    display: none;
+    order: 2;
+  }
+  .meter {
+    margin-top: 10px;
+  }
+}
