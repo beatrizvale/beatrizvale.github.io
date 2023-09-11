@@ -10,7 +10,7 @@ import splashAnimation from "./assets/lottie/loadingAnimation"; // Rename to you
 const splashScreen = {
   enabled: true, // set false to disable splash screen
   animation: splashAnimation,
-  duration: 1000 // Set animation duration as per your animation
+  duration: 750 // Set animation duration as per your animation
 };
 
 // Summary And Greeting Section
@@ -95,6 +95,7 @@ const workExperiences = {
     {
       role: "Master Thesis Researcher",
       company: "ICVS",
+      url: "https://icvs.uminho.pt/",
       companylogo: require("./assets/images/icvs_logo.png"),
       date: "October 2021 – April 2023",
       desc: 'Pursued the project "Exploring SNX3 and SNX27 role in nervous system function - insights from aged and \'stressed\' synapses" as my Master Thesis (Grade: 19/20).',
@@ -110,6 +111,7 @@ const workExperiences = {
     {
       role: "Undergraduate Researcher",
       company: "ICVS",
+      url: "https://icvs.uminho.pt/",
       companylogo: require("./assets/images/icvs_logo.png"),
       date: "July 2019 – July 2020",
       desc: 'Pursued the project "Exploring SNX27 role in stress" as a Volunteer Researcher and as my Undergraduate degree final project (Grade: 19/20).',
@@ -150,7 +152,7 @@ const achievementSection = {
       imageAlt: "Novartis Logo",
       footerLink: [
         {
-          name: "Certification",
+          name: "Certificate",
           url: require("./assets/pdfs/GCP-certificate.pdf")
         }
       ]
@@ -189,7 +191,7 @@ const podcastSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: "Contact Me",
   subtitle:"If I sparked your interest or you have any questions, feel free to reach out to me!",
   number: "+351 924 170 598",
   email_address: "vale.anabeatriz@gmail.com"

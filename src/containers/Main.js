@@ -24,8 +24,9 @@ import "./Main.scss";
 const Main = () => {
   const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
   const [isDark, setIsDark] = useLocalStorage("isDark", darkPref.matches);
-  const [isShowingSplashAnimation, setIsShowingSplashAnimation] =
-    useState(true);
+  const [isShowingSplashAnimation, setIsShowingSplashAnimation] = useState(true);
+
+  document.body.className = isDark ? 'dark-mode' : ''
 
   useEffect(() => {
     if (splashScreen.enabled) {
@@ -41,6 +42,7 @@ const Main = () => {
 
   const changeTheme = () => {
     setIsDark(!isDark);
+    document.body.className = !isDark ? 'dark-mode' : ''
   };
 
   return (
